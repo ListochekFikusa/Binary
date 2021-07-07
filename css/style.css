@@ -1,0 +1,475 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: Lato;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+footer {
+  margin: 0 auto;
+}
+
+a, button {
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+a:hover, button:hover {
+  color: #FF7D5CFF;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.menu {
+  margin: 0 auto;
+}
+.menu__item {
+  margin: 0 25px;
+  color: #3c3c3c;
+  font-weight: normal;
+}
+.menu__item_focus {
+  color: #ada074;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+.title:after {
+  content: "";
+  display: block;
+  width: 81px;
+  height: 1px;
+  margin: 35px auto;
+  background-color: #000000;
+}
+
+.subtitle {
+  display: block;
+  color: #868585;
+  font-size: 14px;
+  text-align: center;
+  width: 688px;
+  height: 66px;
+  margin: 0 auto;
+}
+
+.intro {
+  width: 100%;
+  height: 1173px;
+  background-image: url("../img/BG-Header.png");
+  text-align: center;
+}
+.intro__logotip {
+  display: block;
+  margin: 0 auto;
+  padding-top: 165px;
+}
+.intro__slogan {
+  font-size: 34px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  letter-spacing: 5.44px;
+  line-height: 1.18;
+  margin-top: 159px;
+}
+.intro__slogan span {
+  text-transform: none;
+  font-weight: normal;
+  font-size: 26px;
+}
+.intro__slogan:after {
+  display: block;
+  content: "";
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 49px;
+  margin-bottom: 227px;
+  width: 105px;
+  height: 2px;
+}
+.intro__link {
+  display: block;
+  width: 182px;
+  height: 47px;
+  border: 1px white solid;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 3.2;
+  color: white;
+  margin-bottom: 75px;
+  -webkit-transition: border 0.2s linear, color 0.2s linear;
+  -o-transition: border 0.2s linear, color 0.2s linear;
+  transition: border 0.2s linear, color 0.2s linear;
+}
+.intro__link:hover {
+  border: 1px #FF7D5CFF solid;
+  color: #FF7D5CFF;
+}
+.intro__swipe {
+  color: white;
+  cursor: pointer;
+}
+.intro .menu {
+  margin-top: 165px;
+}
+.intro .menu:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  background-color: #F2F2F2;
+}
+
+.about {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 95px;
+}
+.about__body {
+  max-width: 840px;
+  margin: 0 auto;
+}
+.about__header {
+  width: 100%;
+}
+.about__title {
+  margin-top: 130px;
+}
+.about__subtittle {
+  line-height: 1.86;
+  color: #868585;
+}
+.about__row {
+  margin: 0 auto;
+  margin-top: 69px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+.about__column {
+  width: 33%;
+}
+
+.item-about__icon {
+  border: 2px #F0F0F0 solid;
+  border-radius: 46px;
+  width: 92px;
+  height: 92px;
+  display: inline-block;
+}
+.item-about__icon img {
+  margin: 28px auto;
+}
+.item-about__title {
+  margin-top: 41px;
+  margin-bottom: 35px;
+}
+.item-about__text {
+  color: #868585;
+  font-size: 14px;
+  line-height: 1.86;
+}
+
+.portfolio {
+  padding-top: 107px;
+  background-color: #F3F3F3;
+}
+.portfolio__body {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1140px;
+  padding-bottom: 64px;
+}
+.portfolio .title:after {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.portfolio .menu {
+  margin-bottom: 136px;
+}
+.portfolio__container {
+  width: 100%;
+  margin-bottom: 58px;
+}
+.portfolio .item-portfolio {
+  width: 538px;
+  height: 365px;
+  display: inline-block;
+  margin: 8px 13px;
+  background-color: #EBEBEB;
+}
+.portfolio__link {
+  display: block;
+  margin: 0 auto;
+  width: 182px;
+  height: 47px;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  border: 1px black solid;
+  line-height: 2.7;
+  -webkit-transition: border 0.2s linear, color 0.2s linear;
+  -o-transition: border 0.2s linear, color 0.2s linear;
+  transition: border 0.2s linear, color 0.2s linear;
+}
+.portfolio__link:hover {
+  border: 1px #FF7D5CFF solid;
+  color: #FF7D5CFF;
+}
+
+.partners {
+  height: 390px;
+  width: 100%;
+  background-image: url(../img/BG-Partners.png);
+  background-position: bottom;
+  font-size: 30px;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+}
+.partners__title {
+  padding-top: 100px;
+  margin-bottom: 95px;
+}
+.partners__row {
+  margin: 0 auto;
+  text-align: center;
+}
+.partners__item {
+  display: inline-block;
+  margin: 0 55px;
+}
+.contact__body {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.contact__body .title {
+  padding-top: 180px;
+}
+.contact__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact__message {
+  width: 385px;
+}
+.contact__item-message {
+  display: inline-block;
+  width: 161px;
+  height: 35px;
+  margin-bottom: 108px;
+}
+.contact__item-message span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.contact__item-message_left {
+  margin-right: 60px;
+}
+.contact__item-message_message {
+  width: 383px;
+  height: 150px;
+  margin: 0;
+}
+.contact__poly {
+  border-top: 1px black solid;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F7F7;
+  padding-left: 10px;
+  resize: none;
+}
+.contact__poly_message {
+  height: 118px;
+  padding-top: 10px;
+}
+.contact__button {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  background-color: white;
+  float: right;
+  margin-top: 42px;
+}
+.contact__info {
+  margin-left: 83px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.contact__text-info {
+  line-height: 1.7;
+}
+.contact__name-info {
+  display: block;
+  font-weight: 700;
+  margin-top: 35px;
+}
+.contact__links {
+  margin-top: 25px;
+}
+.contact__links a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px black solid;
+  margin-right: 10px;
+  border-radius: 15px;
+  font-size: 17px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 900;
+  color: black;
+  -webkit-transition: border 0.2s linear, color 0.2s linear;
+  -o-transition: border 0.2s linear, color 0.2s linear;
+  transition: border 0.2s linear, color 0.2s linear;
+}
+.contact__links a:hover {
+  border: 2px #FF7D5CFF solid;
+  color: #FF7D5CFF;
+}
+.contact__links i {
+  position: relative;
+  left: -1px;
+}
+.contact__email {
+  margin-top: 15px;
+}
+.contact__email span {
+  font-weight: 700;
+}
+
+.footer {
+  width: 100%;
+  height: 274px;
+  background-color: #3C3C3C;
+  margin-top: 60px;
+}
+.footer__body {
+  margin: 0 auto;
+}
+.footer__body a {
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+.footer__body a:hover {
+  color: #FF7D5CFF;
+}
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+  padding-top: 48px;
+  margin-bottom: 41px;
+}
+.footer .menu {
+  display: block;
+  text-align: center;
+}
+.footer .menu__item {
+  margin: 0 12px;
+  color: #A4A4A4;
+}
+
+.copyright {
+  display: block;
+  color: #6C6C6C;
+  text-align: center;
+  margin-top: 34px;
+}
